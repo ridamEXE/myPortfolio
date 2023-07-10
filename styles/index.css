@@ -1,0 +1,46 @@
+body {
+    margin: auto;
+    padding: 24px;
+    width: 800px;
+    text-align: center;
+    font-family: 'Geologica', sans-serif;
+    background-color: rgb(203, 227, 232);
+}
+
+header {
+    margin: auto;
+    padding: 24px;
+}
+
+main {
+    margin: auto;
+    padding: 24px;
+}
+
+footer {
+    margin: auto;
+    padding: 24px;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+}
+
+
+img {
+    margin: 3px;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
