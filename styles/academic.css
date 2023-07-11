@@ -1,0 +1,98 @@
+main h3 {
+    margin: 100px 0px 0px 0px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#academic-details {
+    padding: 24px;
+    text-align: left;
+}
+
+#academic-details h4 {
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+
+#academic-details h6 {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#college-details {
+    margin: 50px 10%;
+    display: flex;
+    flex-direction: row;    /*default*/
+    flex-wrap: nowrap;      /*default*/
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 4px 8px rgb(70, 70, 70);
+    border-radius: 8px;
+}
+
+#clg-logo {
+    width: 300px;
+}
+
+#clg-logo img {
+    width: 300px;
+}
+
+#clg-details {
+    width: 650px;
+}
+
+.parent-list{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    word-spacing: 0.1em;
+    list-style: disc;
+    margin: 10px;
+}
+
+#clg-details li{
+    margin: 10px;
+}
+
+.child-list{
+    font-weight: 500;
+    list-style: circle;
+}
+
+#school-details li{
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+#schooling-details {
+    margin: 70px 10%;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 4px 8px rgb(70, 70, 70);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+#school-logo {
+    width: 300px;
+    left: 30px;
+}
+
+#school-logo img {
+    width: 300px;
+}
+
+#school-details {
+    width: 650px
+}
+
+.list-value{
+    font-weight: 500;
+}

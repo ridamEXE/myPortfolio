@@ -1,7 +1,8 @@
 body {
     margin: auto;
     padding: 24px;
-    width: 800px;
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
     font-family: 'Geologica', sans-serif;
     background-color: rgb(203, 227, 232);
@@ -24,15 +25,17 @@ footer {
 
 h1 {
     font-size: 65px;
+    letter-spacing: 0.04em;
 }
 
 a {
     text-decoration: none;
     color: black;
+    transition: 0.5s;
 }
 
 main a:hover {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgb(70, 70, 70);
     text-decoration: underline;
 }
 

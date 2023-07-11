@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    font-family: 'Geologica', sans-serif;
+}
+
+header {
+    margin-top: 12px;
+    letter-spacing: 0.1em;
+}
+
+header h1 {
+    margin: 0px;
+    font-size: 35px;
+}
+
+nav ul {
+    padding: 0px 12px;
+}
+
+.nav-list {
+    margin-right: 50px;
+    display: inline;
+}
+
+.nav-list-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list-link:hover {
+    color: rgb(70, 70, 70);
+}
