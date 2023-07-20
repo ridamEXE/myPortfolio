@@ -37,7 +37,7 @@ main a:hover {
 }
 
 footer {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 footer ul {
@@ -70,8 +70,7 @@ img:hover {
 }
 
 footer p {
-    margin: 0px;
-    padding: 0px;
-    font-size: 0.1rem;
-    font-weight: 100;
+    color: rgb(170, 170, 170);
+    font-weight: 200;
+    margin-top: 3rem;
 }

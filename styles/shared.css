@@ -45,3 +45,9 @@ section h2 {
     font-size: 5rem;
     font-family: 'Montserrat';
 }
+
+footer p {
+    color: grey;
+    font-weight: 200;
+    margin-top: 3rem;
+}
