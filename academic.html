@@ -4,6 +4,7 @@
 <head>
     <title>Academic</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,31 +15,35 @@
 </head>
 
 <body>
-    <header>
-        <h1>RIDAM KRISHNA</h1>
-    </header>
+    <section>
+        <header>
+            <h1>RIDAM KRISHNA</h1>
+        </header>
 
-    <nav>
-        <ul>
-            <li class="nav-list"><a class="nav-list-link" href="index.html">HOME</a></li>
-            <li class="nav-list"><a class="nav-list-link" href="aboutme.html">ABOUT ME</a></li>
-            <li class="nav-list"><a class="nav-list-link" href="project.html">PROJECTS</a></li>
-            <li class="nav-list"><a class="nav-list-link" href="#">PHOTOGRAPHY</a></li>
-            <li class="nav-list"><a class="nav-list-link" href="#">PERSONAL TIMELINE</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li class="nav-list"><a class="nav-list-link" href="index.html">HOME</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="aboutme.html">ABOUT ME</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="academic.html">ACADEMIC</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="project.html">PROJECTS</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="photography.html">PHOTOGRAPHY</a></li>
+                <li class="nav-list"><a class="nav-list-link" href="#">PERSONAL TIMELINE</a></li>
+            </ul>
+        </nav>
+
+        <h2>ACADEMIC EXPERIENCE</h2>
+    </section>
 
     <main>
-        <h3>ACADEMIC EXPERIENCE</h3>
-        <hr>
         <div id="academic-details">
-            <div id="college-details">
-                <div id="clg-logo">
-                    <img src="images/srm.png" alt="SRM logo">
-                </div>
-                <div id="clg-details">
-                    <h4>SRM Institute of Science and Technology | SRMIST</h4>
+            <div class="card">
+                <div class="card-heading">
+                    <h3>SRM Institute of Science and Technology | SRMIST</h3>
                     <h6>Pursuing B.Tech in Computer Science Engineering</h6>
+                </div>
+
+                <div class="card-details">
+                    <img src="images/srm.png" alt="SRM logo">
                     <ul class="parent-list">
                         <li>Overall CGPA: <span class="list-value">9.45/10.00</span></li>
                         <li>Expected Graduation Date: <span class="list-value">June 2024</span></li>
@@ -55,17 +60,17 @@
                             </ul>
                         </li>
                     </ul>
-                    <p></p>
                 </div>
-            </div>
-
-            <div id="schooling-details">
-                <div id="school-logo">
-                    <img src="images/stmarys.png" alt="St. Mary's logo">
-                </div>
-                <div id="school-details">
-                    <h4>St. Mary's School, Ashram Road, Mainpuri</h4>
+            </div>      
+            <div class="line"></div>
+            <div class="card">
+                <div class="card-heading">
+                    <h3>St. Mary's School, Ashram Road, Mainpuri</h3>
                     <h6>Completed Higher Secondary Education in Science</h6>
+                </div>
+
+                <div class="card-details">
+                    <img src="images/stmarys.png" alt="St. Mary's logo">
                     <ul class="parent-list">
                         <li>Overall Percentage: <span class="list-value">70.6%</span></li>
                         <li>Graduation Date: <span class="list-value">May 2020</span></li>
@@ -80,12 +85,10 @@
                 </div>
             </div>
         </div>
-
-
     </main>
 
     <footer>
-
+        <p>© Copyright 2023. All Rights Reserved</p>
     </footer>
 </body>
 

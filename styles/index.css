@@ -1,54 +1,52 @@
 body {
-    margin: auto;
-    padding-top: 150px;
+    margin: 0rem;
     color: rgb(255, 255, 255);
-    box-sizing: border-box;
     text-align: center;
     font-family: 'Geologica', sans-serif;
-    background-image: url(./w3.jpg);
-    /* background-image: url(/images/w3.jpg); */
+    /* background-image: url(./w3.jpg); */
+    background-image: url("/images/w3.jpg");
     /* we need to add . to the link so that our image will load on github */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 h1 {
-    font-size: 65px;
-    letter-spacing: 0.04em;
+    margin: 5rem 0rem;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
 }
 
-main ul{
-    margin: 50px;
-    padding: 0px;
-    height: 300px;
+main ul {
+    margin: 3rem;
+    padding: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-main li{
-    margin: 15px;
+main li {
+    margin: 1rem;
     list-style: none;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 main a:hover {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12rem;
     color: rgb(180, 180, 180);
 }
 
 footer {
-    padding: 24px;
+    padding: 1.5rem;
 }
 
-footer ul{
-    padding: 0px;
-    display:flex;
+footer ul {
+    padding: 0rem;
+    display: flex;
     justify-content: center;
 }
 
-footer li{
+footer li {
     list-style: none;
 }
 
@@ -61,19 +59,19 @@ a {
 img {
     margin: 3px 8px;
     padding: 3px;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     display: inline-block;
     transition: 0.5s;
 }
 
-img:hover{
+img:hover {
     rotate: -30deg;
 }
 
-footer p{
+footer p {
     margin: 0px;
     padding: 0px;
-    font-size: 12px;
+    font-size: 0.1rem;
     font-weight: 100;
 }

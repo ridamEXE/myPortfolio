@@ -1,39 +1,61 @@
-main {
-    margin: auto;
-    padding: 24px;
+section {
+    background-image: url("/images/banner.png");
+    background-position: top;
 }
 
-img {
-    width: 650px;
-    margin-top: 40px;
-    padding: 5px;
+main {
+    margin: 1rem;
+    padding: 0rem;
+}
+
+#my-card {
+    display: flex;
+    justify-content: center;
+}
+
+#my-card-details {
+    padding-right: 2rem;
+}
+
+#my-card-image img {
+    width: 30rem;
+    box-shadow: 2px 4px 10px rgb(69, 69, 69);
+    border-radius: 5px;
 }
 
 h3 {
-    margin: 50px 0px 15px 0px;
-    padding: 5px;
-    font-size: 30px;
-    text-align: center;
+    margin: 3rem 0rem 2rem 0rem;
+    padding: 0rem;
+    font-size: 2rem;
+    text-align: left;
 }
 
 main p {
-    margin: auto;
-    width: 1200px;
-    padding: 0px 40px 30px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    /* margin: 0rem 2.5rem; */
+    width: 800px;
+    /* padding: 0px 40px 30px 40px; */
     text-align: justify;
 }
 
 footer {
-    margin: auto;
-    padding: 24px;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-weight: 200;
+    margin-top: 3rem;
 }
 
 .footer-link-style {
-    margin: auto;
+    margin: 0rem;
+    padding: 0.6rem 1rem;
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 10px 15px;
+
 }
 
 .footer-link-style:hover {
