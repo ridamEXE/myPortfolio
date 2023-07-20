@@ -3,8 +3,8 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Geologica', sans-serif;
-    /* background-image: url(./w3.jpg); */
-    background-image: url("/images/w3.jpg");
+    background-image: url(./images/w3.jpg);
+    /* background-image: url("/images/w3.jpg"); */
     /* we need to add . to the link so that our image will load on github */
     background-size: cover;
     background-repeat: no-repeat;
