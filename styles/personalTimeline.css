@@ -1,11 +1,75 @@
-section {
-    color: black;
+section{
+    background: url(./images/personalTimeline.jpg);
+    background-size: cover;
+    background-position: bottom;
+    /* this is how we declare and use variables in css.
+    --variable-name: rgb(202, 202, 202);
+    background-color: var(--variable-name); */
 }
 
-.nav-list-link {
-    color: black;
+body{
+    background-color: rgb(245, 245, 245);
 }
 
-img{
-    width: 15%;
+#timeline{
+    margin: 0rem auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 0.5rem 1fr;
+    gap: 2rem 2.5rem;
+}
+
+#line-element{
+    border-radius: 4px;
+    grid-column: 2/span 1;
+    grid-row: 1/span 5;
+    background-color: rgb(130, 130, 130);
+}
+
+.event-container{
+    padding: 1rem 1rem 0rem 1rem;
+    text-align: left;
+    background-color: white;
+    box-shadow: 2px 2px 8px grey;
+    border-radius: 8px;
+    transition: transform 0.3s ease-out;
+}
+
+.event-container:hover{
+    transform: scale(1.03);
+}
+
+.left{
+    text-align: right;
+}
+
+.right{
+    text-align: left;
+}
+
+h3{
+    /* background-color: lightblue; */
+    margin: 0rem auto;
+    font-size: 1.5rem;
+    color: rgb(40, 40, 40);
+}
+
+h4{
+    /* background-color: lightblue;  */
+    margin-top: 0rem;
+    font-weight: 400;
+    color: rgb(56, 56, 56);
+}
+
+main p{
+    margin: 2rem auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+    text-align: left;
+}
+
+.event-container-exception{
+    background-color: none;
 }

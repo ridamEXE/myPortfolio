@@ -28,6 +28,7 @@ h3 {
     padding: 0rem;
     font-size: 2rem;
     text-align: left;
+    color: rgb(33, 33, 33);
 }
 
 main p {
@@ -38,6 +39,7 @@ main p {
     width: 800px;
     /* padding: 0px 40px 30px 40px; */
     text-align: justify;
+    color: rgb(56, 56, 56);
 }
 
 footer {
@@ -56,9 +58,8 @@ footer p {
     text-decoration: none;
     color: white;
     background-color: black;
-
 }
 
 .footer-link-style:hover {
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(30, 30, 30);
 }

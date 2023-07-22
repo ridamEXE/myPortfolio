@@ -31,6 +31,12 @@ main li {
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
 main a:hover {
     letter-spacing: 0.12rem;
     color: rgb(180, 180, 180);
@@ -50,27 +56,23 @@ footer li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: 0.2s;
-}
-
 img {
     margin: 3px 8px;
     padding: 3px;
     width: 2.5rem;
     height: 2.5rem;
     display: inline-block;
-    transition: 0.5s;
+    /* transition: 0.5s; */
+    transition: 0.2s ease-in;
 }
 
 img:hover {
-    rotate: -30deg;
+    transform: scale(1.10);
+    opacity: 0.8;
 }
 
 footer p {
     color: rgb(170, 170, 170);
     font-weight: 200;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
