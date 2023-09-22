@@ -4,27 +4,32 @@ section {
 }
 
 main {
-    margin: 1rem;
+    margin: auto;
     padding: 0rem;
+    width: 90%;
 }
 
 #my-card {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
 #my-card-details {
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
+    width: 60%;
 }
 
-#my-card-image img {
-    width: 30rem;
-    box-shadow: 2px 4px 10px rgb(69, 69, 69);
-    border-radius: 5px;
+img {
+    width: 35%;
+    box-shadow: 2px 2px 10px rgba(98, 98, 98 ,0.6);
+    border-radius: 0.2rem;
+    object-fit: cover;
 }
 
 h3 {
-    margin: 3rem 0rem 2rem 0rem;
+    /* margin: 3rem 0rem 2rem 0rem; */
+    /* width: 30%; */
     padding: 0rem;
     font-size: 2rem;
     text-align: left;
@@ -36,7 +41,7 @@ main p {
     font-size: 1rem;
     font-weight: 400;
     /* margin: 0rem 2.5rem; */
-    width: 800px;
+    /* width: 800px; */
     /* padding: 0px 40px 30px 40px; */
     text-align: justify;
     color: rgb(56, 56, 56);
@@ -52,14 +57,16 @@ footer p {
     margin-top: 3rem;
 }
 
-.footer-link-style {
+button {
     margin: 0rem;
     padding: 0.6rem 1rem;
-    text-decoration: none;
-    color: white;
+    border: none;
+    /* text-decoration: none; */
+    color: rgb(240, 240, 240);
     background-color: black;
+    cursor: pointer;
 }
 
-.footer-link-style:hover {
+button:hover {
     background-color: rgb(30, 30, 30);
 }
