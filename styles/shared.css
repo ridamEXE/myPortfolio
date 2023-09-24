@@ -3,28 +3,25 @@ body {
     padding: 0rem;
     text-align: center;
     font-family: 'Geologica', sans-serif;
-    background-color: rgb(245,245,245);
-}
-
-header {
-    padding-top: 1rem;
-    letter-spacing: 0.1rem;
-}
-
-header h1 {
-    margin: 0rem; 
-    font-size: 2rem;
-}
-
-nav ul {
-    padding: 0rem 1rem;
-    list-style: none;
+    background-color: rgb(245, 245, 245);
 }
 
 section {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+}
+
+header h1 {
+    margin: 0rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+nav ul {
+    padding: 0rem 1rem;
+    list-style: none;
 }
 
 .nav-list {
@@ -47,9 +44,104 @@ section h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
+#overlay{
+    display: none;
+}
+
+#expand{
+    display: none;
+}
+
 footer p {
     color: grey;
     font-size: 0.7rem;
     font-weight: 200;
     margin-top: 3rem;
+}
+
+@media(max-width: 1080px) {
+    section {
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section h2 {
+        height: auto;
+        margin: 5rem 0;
+        font-size: 7rem;
+    }
+
+    hr {
+        width: 70%;
+    }
+
+    #shrink {
+        margin: 0 auto;
+        width: 5%;
+        background-color: white;
+        color: rgb(21, 21, 21);
+        border-top-right-radius: 0.4rem;
+        border-top-left-radius: 0.4rem;
+    }
+
+    #overlay {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+    }
+
+    #overlay span {
+        transform: scale(3);
+    }
+
+    #overlay article {
+        margin: 0 auto;
+        padding: 1rem 3rem;
+        width: 65%;
+        border-radius: 1rem;
+        background-color: white;
+    }
+
+    #overlay ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #overlay ul li {
+        margin: 2rem 0;
+    }
+
+    #overlay ul li a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: rgb(20, 20, 20);
+    }
+
+    #expand {
+        margin: 0 auto;
+        width: 20%;
+        display: inline-block;
+        font-size: 3rem;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+    }
+
 }

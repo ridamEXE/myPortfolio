@@ -1,14 +1,16 @@
-section{
+section {
     background-image: url(./images/academic.jpg);
     background-position: center;
 }
 
 main {
-    margin: 1rem 5%;
+    /* margin: 1rem auto; */
     padding: 0rem;
 }
 
 #academic-details {
+    margin: auto;
+    width: 95%;
     display: grid;
     grid-template-columns: 1fr 0fr 1fr;
     gap: 10px;
@@ -34,16 +36,16 @@ main {
     transition: 0.5s;
 }
 
-.card img{
+.card img {
     width: 200px;
     height: 200px;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 1px 1px 10px rgb(113, 113, 113);
 }
 
-.card-details{
+.card-details {
     text-align: left;
     display: flex;
     justify-content: center;
@@ -57,7 +59,7 @@ main {
     list-style: disc;
 }
 
-.parent-list li{
+.parent-list li {
     margin: 0.5rem 0rem;
 }
 
@@ -66,7 +68,7 @@ main {
     list-style: circle;
 }
 
-.child-list li{
+.child-list li {
     margin: 0.3rem;
 }
 
@@ -80,7 +82,33 @@ footer p {
     margin-top: 3rem;
 }
 
-.line{
+.line {
     border-left: solid;
     border-color: rgb(195, 195, 195);
+}
+
+@media(max-width: 1080px) {
+    #academic-details {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-heading h3 {
+        font-size: 2.5rem;
+    }
+
+    .card-heading h6{
+        font-size: 1.5rem;
+    }
+
+    .parent-list{
+        width: 60%;
+        font-size: 2rem;
+    }
 }

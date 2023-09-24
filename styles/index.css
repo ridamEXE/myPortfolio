@@ -79,3 +79,52 @@ footer p {
     font-weight: 200;
     margin-top: 1.5rem;
 }
+
+@media(max-width:1080px){
+    body{
+        display: block;
+        justify-content: center;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+    }
+
+    main{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        height: 40vh;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+    }
+
+    h1{
+        font-size: 10rem;
+    }
+
+    main li{
+        font-size: 2.5rem;
+        margin: 2rem auto;
+    }
+
+    img {
+        margin: 1rem;
+        padding: 0.5rem;
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    footer p {
+        font-size: 1.5rem;
+    }
+}

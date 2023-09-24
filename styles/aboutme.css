@@ -12,24 +12,20 @@ main {
 #my-card {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 #my-card-details {
-    /* padding-right: 2rem; */
     width: 60%;
 }
 
 img {
     width: 35%;
-    box-shadow: 2px 2px 10px rgba(98, 98, 98 ,0.6);
+    box-shadow: 2px 2px 10px rgba(98, 98, 98, 0.6);
     border-radius: 0.2rem;
     object-fit: cover;
 }
 
 h3 {
-    /* margin: 3rem 0rem 2rem 0rem; */
-    /* width: 30%; */
     padding: 0rem;
     font-size: 2rem;
     text-align: left;
@@ -40,9 +36,6 @@ main p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    /* margin: 0rem 2.5rem; */
-    /* width: 800px; */
-    /* padding: 0px 40px 30px 40px; */
     text-align: justify;
     color: rgb(56, 56, 56);
 }
@@ -61,7 +54,6 @@ button {
     margin: 0rem;
     padding: 0.6rem 1rem;
     border: none;
-    /* text-decoration: none; */
     color: rgb(240, 240, 240);
     background-color: black;
     cursor: pointer;
@@ -69,4 +61,47 @@ button {
 
 button:hover {
     background-color: rgb(30, 30, 30);
+}
+
+@media(max-width: 1080px) {
+    main {
+        margin-top: 2rem;
+        width: auto;
+        display: flex;
+        justify-content: end;
+    }
+
+    #my-card {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #my-card-details {
+        width: 90%;
+    }
+
+    img {
+        width: 70%;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    main p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        margin: 5rem auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    button {
+        padding: 2rem 3rem;
+        font-size: 2rem;
+    }
 }
