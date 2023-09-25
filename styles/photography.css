@@ -78,3 +78,7 @@ main li:nth-of-type(24) {
 main li:nth-of-type(27) {
     grid-column: 2/span 3;
 }
+
+@media(max-width: 1080px){
+    
+}
