@@ -91,10 +91,47 @@ h4 {
     text-decoration: none;
 }
 
-hr {
+main hr {
     margin: 3rem auto;
 }
 
 img {
     width: 160px;
+}
+
+@media(max-width: 1080px) {
+    main {
+        margin: 1rem auto;
+        width: 90%;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .project {
+        margin: 0;
+        padding: 3rem 2rem 3rem 2rem;
+    }
+
+    .project p {
+        display: none;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .project-link a {
+        padding: 1rem 2.5rem;
+        font-size: 2rem;
+    }
+
+    #show-description{
+        font-size: 0.8rem;
+        align-items: center;
+    }
 }
