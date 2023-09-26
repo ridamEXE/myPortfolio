@@ -12,6 +12,7 @@ main {
 #my-card {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #my-card-details {
@@ -33,8 +34,9 @@ h3 {
 }
 
 main p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 1rem;
+    word-spacing: -0.1rem;
     font-weight: 400;
     text-align: justify;
     color: rgb(56, 56, 56);
@@ -90,7 +92,7 @@ button:hover {
     }
 
     main p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     footer {
