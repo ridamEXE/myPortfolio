@@ -1,9 +1,9 @@
-const wallpapers = ["w1.jpg", "w2.jpg", "w3.jpg", "w4.jpg", "w5.jpg", "w6.jpg", "w7.jpg", "w8.jpg"];
-let index = +0;
+let index = +1;
+let totalWallpapers = +8;
 
 function changeWallpaper() {
-    document.body.style.backgroundImage = "url(./images/" + wallpapers[index++] + ")";
-    if (index === wallpapers.length) index = 0;
+    document.body.style.backgroundImage = `url(./images/HomeBackground/w${index++}.jpg)`;
+    if (index === totalWallpapers+1) index = 1;
 }
 
 changeWallpaper();

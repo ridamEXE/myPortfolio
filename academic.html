@@ -7,11 +7,14 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap">
     <link
-        href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preload" as="image" href="./styles/images/academic_banner.jpg">
     <script src="scripts/shared.js" defer></script>
     <link rel="stylesheet" href="styles/shared.css">
     <link rel="stylesheet" href="styles/academic.css">
@@ -35,15 +38,11 @@
         </nav>
 
         <h2>ACADEMIC EXPERIENCE</h2>
-        <span class="material-symbols-outlined" id="expand">
-            expand_more
-        </span>
+        <span class="material-symbols-outlined" id="expand">expand_more</span>
     </section>
 
     <section id="overlay">
-        <span class="material-symbols-outlined" id="shrink">
-            expand_less
-        </span>
+        <span class="material-symbols-outlined" id="shrink">expand_less</span>
         <article>
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -62,60 +61,163 @@
     </section>
 
     <main>
+        <h3>EDUCATION</h3>
+        <span class="material-symbols-outlined">school</span>
+        <hr width="70%" size="3" color="black" noshade>
         <div id="academic-details">
             <div class="card">
+                <div id="box-1-design"></div>
+                <div id="box-2-design"></div>
                 <div class="card-heading">
-                    <h3>SRM Institute of Science and Technology | SRMIST</h3>
-                    <h6>Pursuing B.Tech in Computer Science Engineering</h6>
+                    <img src="images/srm.png" alt="SRM logo">
+                    <div>
+                        <h6>SEPT 2020 - JUNE 2024</h6>
+                        <h4>Bachelor of Technology in Computer Science & Engineering</h4>
+                        <h5>Pursuing from SRM Institute of Science and Technology | Delhi-NCR</h5>
+                    </div>
                 </div>
 
                 <div class="card-details">
-                    <img src="images/srm.png" alt="SRM logo">
                     <ul class="parent-list">
-                        <li>Overall CGPA: <span class="list-value">9.45/10.00</span></li>
-                        <li>Expected Graduation Date: <span class="list-value">June 2024</span></li>
-                        <li>Relevent Coursework:
-                            <ul class="child-list">
-                                <li>Data Structures</li>
-                                <li>Operating System</li>
-                                <li>Database Management System</li>
-                                <li>Object Oriented Programming</li>
-                                <li>Design and Analysis of Algorithms</li>
-                                <li>Automata</li>
-                                <li>Computer Networks</li>
-                                <li>Compiler Design</li>
-                            </ul>
+                        <li><b>Overall Score: </b><span class="list-value">9.45/10.00</span></li>
+                        <li><b>Expected Graduation Date: </b><span class="list-value">June 2024</span></li>
+                        <li><b>Relevent Coursework: </b><span class="list-value">Data Structures, Operating System,
+                                Database Management System, Object Oriented Programming, Design and Analysis of
+                                Algorithms, Automata, Computer Networks, Compiler Design.</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="line"></div>
-            <div class="card">
-                <div class="card-heading">
-                    <h3>St. Mary's School, Ashram Road, Mainpuri</h3>
-                    <h6>Completed Higher Secondary Education in Science</h6>
-                </div>
 
-                <div class="card-details">
+            <hr width="30%" size="2" color="lightgrey" noshade>
+
+            <div class="card">
+                <div id="box-1-design"></div>
+                <div id="box-2-design"></div>
+                <div class="card-heading">
                     <img src="images/stmarys.png" alt="St. Mary's logo">
+                    <div>
+                        <h6>APRIL 2019 - JULY 2020</h6>
+                        <h4>Higher Secondary Education (HSC/12th) in Science</h4>
+                        <h5>Completed From St. Mary's School | Mainpuri</h5>
+                    </div>
+                </div>
+                <div class="card-details">
                     <ul class="parent-list">
-                        <li>Overall Percentage: <span class="list-value">70.6%</span></li>
-                        <li>Graduation Date: <span class="list-value">May 2020</span></li>
-                        <li>Relevent Coursework:
-                            <ul class="child-list">
-                                <li>Physics</li>
-                                <li>Chemistry</li>
-                                <li>Mathematics</li>
-                            </ul>
+                        <li><b>Overall Score: </b><span class="list-value">70.60%</span></li>
+                        <li><b>Graduation Date: </b><span class="list-value">July 2020</span></li>
+                        <li><b>Relevent Coursework: </b><span class="list-value">Physics, Chemistry, Mathematics,
+                                English, Informatics Practices.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr width="30%" size="2" color="lightgrey" noshade>
+
+            <div class="card">
+                <div id="box-1-design"></div>
+                <div id="box-2-design"></div>
+                <div class="card-heading">
+                    <img src="images/stmarys.png" alt="St. Mary's logo">
+                    <div>
+                        <h6>APRIL 2017 - MAY 2018</h6>
+                        <h4>Secondary Education (SSC/10th)</h4>
+                        <h5>Completed From St. Mary's School | Mainpuri</h5>
+
+                    </div>
+                </div>
+                <div class="card-details">
+                    <ul class="parent-list">
+                        <li><b>Overall Score: </b><span class="list-value">76.67%</span></li>
+                        <li><b>Graduation Date: </b><span class="list-value">May 2018</span></li>
+                        <li><b>Relevent Coursework: </b><span class="list-value">Hindi, English, Mathematics, Science,
+                                Social Science, Foundation of IT.</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <h3>CERTIFICATES</h3>
+        <span class="material-symbols-outlined">license</span>
+        <hr width="70%" size="3" color="black" noshade>
+        <div id="certicicate-details">
+            <div> to do here </div>
+        </div>
+
+        <h3>SKILLS</h3>
+        <span class="material-symbols-outlined">trophy</span>
+        <hr width="70%" size="3" color="black" noshade>
+        <div id="skill-details">
+            <div class="skill-card">
+                <div id="skill-card-design-1"></div>
+                <div id="skill-card-design-2"></div>
+                <h4>Technical Skills</h4>
+                <ul>
+                    <li>Data Structures</li>
+                    <li>Object Oriented Programming</li>
+                    <li>DataBase Management System</li>
+                    <li>Operating System</li>
+                    <li>Computer Networks</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div id="skill-card-design-1"></div>
+                <div id="skill-card-design-2"></div>
+                <h4>Soft Skills</h4>
+                <ul>
+                    <li>Integrity</li>
+                    <li>Teamwork</li>
+                    <li>Time Management</li>
+                    <li>Documentation</li>
+                    <li>Communication & Listening</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div id="skill-card-design-1"></div>
+                <div id="skill-card-design-2"></div>
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            
+            <div class="skill-card">
+                <div id="skill-card-design-1"></div>
+                <div id="skill-card-design-2"></div>
+                <h4>Non-Technnical Skills</h4>
+                <ul>
+                    <li>E-Sports</li>
+                    <li>Photography</li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div id="skill-card-design-1"></div>
+                <div id="skill-card-design-2"></div>
+                <h4>Additional Skills</h4>
+                <ul>
+                    <li>Arduino</li>
+                    <li>LeetCode</li>
+                    <li>Git/GitHub</li>
+                    <li>MS Office</li>
+                    <li>AutoCAD</li>
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>© Ridam Krishna 2023</p>
+        <p>© Ridam Krishna 2024</p>
     </footer>
 </body>
 

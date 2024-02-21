@@ -1,90 +1,194 @@
 section {
-    background-image: url(./images/academic.jpg);
+    background-image: url(./images/academic_banner.jpg);
     background-position: center;
 }
 
 main {
-    /* margin: 1rem auto; */
-    padding: 0rem;
-}
-
-#academic-details {
     margin: auto;
-    width: 95%;
-    display: grid;
-    grid-template-columns: 1fr 0fr 1fr;
-    gap: 10px;
+    padding: 0rem;
+    width: 80%;
 }
 
-.card-heading h3 {
-    /* text-align: left; */
-    margin-bottom: 0rem;
-    font-size: 1.5rem;
+h3 {
+    margin: 0;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
 }
 
-.card-heading h6 {
-    /* text-align: left; */
-    margin: 0.5rem 0rem 2rem 0rem;
+.material-symbols-outlined {
+    font-size: 2rem;
+}
+
+h6 {
+    margin: 0 0 0.5rem 1rem;
+    text-align: left;
+    letter-spacing: 0.1rem;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+h4 {
+    margin: 0 0 0 1rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+h5 {
+    margin: 0 0 0 1rem;
+    text-align: left;
     font-weight: 400;
     font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .card {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    height: 20rem;
+    border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
-    border-radius: 4px;
-    transition: 0.5s;
-}
-
-.card img {
-    width: 200px;
-    height: 200px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
 }
 
 .card:hover {
-    box-shadow: 1px 1px 10px rgb(113, 113, 113);
+    box-shadow: 0px 0px 10px 1px rgb(224, 224, 224);
+}
+
+#box-1-design {
+    top: 45%;
+    left: -15%;
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+    background: linear-gradient(-60deg, rgb(150, 150, 150), rgb(206, 206, 206), rgb(210, 210, 210));
+    rotate: 23deg;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.card:hover #box-1-design{
+    top: 50%;
+}
+
+#box-2-design{
+    top: 0%;
+    left: 0%;
+    width: 100rem;
+    height: 50rem;
+    position: absolute;
+    background: linear-gradient(-60deg, rgb(173, 173, 173), rgb(229, 229, 229), rgb(240, 240, 240));
+    rotate: -30deg;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.card:hover #box-2-design{
+    left: 5%;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+.card-heading {
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .card-details {
     text-align: left;
-    display: flex;
-    justify-content: center;
 }
 
 .parent-list {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.04rem;
+    font-family: 'Asap', sans-serif;
+    letter-spacing: 0.02rem;
     word-spacing: 0.1rem;
-    list-style: disc;
+    list-style: none;
 }
 
 .parent-list li {
     margin: 0.5rem 0rem;
 }
 
-.child-list {
-    font-weight: 500;
-    list-style: circle;
-}
-
-.child-list li {
-    margin: 0.3rem;
-}
-
 .list-value {
     font-weight: 500;
+}
+
+#skill-details{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.skill-card{
+    padding: 1rem;
+    width: 30rem;
+    background-color: rgba(232, 232, 232, 0.518);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+}
+
+.skill-card:hover{
+    box-shadow: 0px 0px 10px 1px rgb(224, 224, 224);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#skill-card-design-1{
+    right: -10%;
+    top: -10%;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 49% 51% 51% 49% / 36% 69% 31% 64%;
+    background: linear-gradient(90deg, rgb(238, 238, 238), rgb(212, 212, 212), rgb(189, 189, 189));
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.skill-card:hover #skill-card-design-1{
+    border-radius: 67% 33% 61% 39% / 47% 30% 70% 53%;
+}
+
+#skill-card-design-2{
+    left: -2%;
+    bottom: -30%;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 47% 53% 53% 47% / 65% 46% 54% 35%;
+    background: linear-gradient(90deg, rgb(238, 238, 238), rgb(212, 212, 212), rgb(189, 189, 189));
+    position: absolute;
+    z-index: -1;
+    transition: 0.9s;
+}
+
+.skill-card:hover #skill-card-design-2{
+    border-radius: 67% 33% 68% 32% / 30% 52% 48% 70%;
+}
+
+
+.skill-card h4{
+    margin: 0;
+}
+
+.skill-card ul{
+    /* padding: 0; */
+    list-style: none;
 }
 
 footer p {
     color: grey;
     font-weight: 200;
     margin-top: 3rem;
-}
-
-.line {
-    border-left: solid;
-    border-color: rgb(195, 195, 195);
 }
 
 @media(max-width: 1080px) {
@@ -94,20 +198,20 @@ footer p {
         flex-direction: column;
     }
 
-    .card img{
+    .card img {
         width: 300px;
         height: 300px;
     }
 
-    .card-heading h3 {
+    .card-heading h4 {
         font-size: 2.5rem;
     }
 
-    .card-heading h6{
+    .card-heading h5 {
         font-size: 1.5rem;
     }
 
-    .parent-list{
+    .parent-list {
         width: 60%;
         font-size: 2rem;
     }
