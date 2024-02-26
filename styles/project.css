@@ -4,8 +4,9 @@ section {
 }
 
 main {
-    margin: 1rem;
+    margin: 1rem auto;
     padding: 0rem;
+    width: 90%;
     text-align: left;
 }
 
@@ -31,7 +32,7 @@ h4 {
 }
 
 .project {
-    margin: 0rem 3rem;
+    margin: 0rem auto;
     padding: 1.5rem 5rem;
     color: rgb(255, 255, 255);
     display: flex;
@@ -74,13 +75,12 @@ h4 {
     padding: 10px 20px;
     text-shadow: none;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     transition: 0.2s;
 }
 
 .project-link a:hover {
     background-color: black;
-    border-radius: 4px;
     color: white;
 }
 
@@ -92,7 +92,7 @@ h4 {
 }
 
 main hr {
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
 
 img {
@@ -101,8 +101,7 @@ img {
 
 @media(max-width: 1080px) {
     main {
-        margin: 1rem auto;
-        width: 90%;
+        margin: 3rem auto 0rem auto;
     }
 
     h3 {
@@ -115,8 +114,8 @@ img {
     }
 
     .project {
-        margin: 0;
-        padding: 3rem 2rem 3rem 2rem;
+        width: auto;
+        padding: 2rem;
     }
 
     .project p {
@@ -130,8 +129,27 @@ img {
         font-size: 2rem;
     }
 
-    #show-description{
+    #show-description {
         font-size: 0.8rem;
         align-items: center;
+    }
+}
+
+@media(hover:none) {
+    .project {
+        transition: none;
+    }
+
+    .project:hover {
+        transform: none;
+    }
+
+    .project-link a {
+        transition: none;
+    }
+
+    .project-link a:hover {
+        background-color: white;
+        color: black;
     }
 }

@@ -35,7 +35,7 @@ h3 {
     color: rgb(33, 33, 33);
 }
 
-hr {
+main hr {
     margin: 0;
     width: 9rem;
 }
@@ -106,7 +106,7 @@ button:hover {
         font-size: 3.5rem;
     }
 
-    hr {
+    main hr {
         visibility: hidden;
     }
 

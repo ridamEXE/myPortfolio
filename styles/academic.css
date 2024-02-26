@@ -123,6 +123,10 @@ h5 {
     align-items: center;
 }
 
+.card-heading div{
+    width: 100%;
+}
+
 .card-details {
     text-align: left;
 }
@@ -321,7 +325,7 @@ footer p {
 
     h6 {
         margin: 0;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     h4 {
@@ -331,7 +335,7 @@ footer p {
 
     h5 {
         margin: 0.5rem 0 0 0;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .heading-hr {
@@ -349,7 +353,6 @@ footer p {
 
     .academic-card {
         border-radius: 1rem;
-        width: 100%;
         height: auto;
     }
 
@@ -442,7 +445,7 @@ footer p {
     }
 
     .skill-card ul {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 }
 
