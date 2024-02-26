@@ -3,14 +3,17 @@ const shrinkBtn = document.getElementById("shrink");
 const overlay = document.getElementById("overlay");
 
 function showMenu() {
-    expandBtn.style.color = "transparent";
+    expandBtn.style.visibility = "hidden";
     overlay.style.display = "flex";
+    overlay.style.visibility = "visible";
 }
 
 function hideMenu() {
-    expandBtn.style.color = "white";
-    overlay.style.display = "none";
+
+    expandBtn.style.visibility = "visible";
+    overlay.style.visibility = "hidden";
 }
 
 expandBtn.addEventListener("click", showMenu);
 shrinkBtn.addEventListener("click", hideMenu);
+overlay.addEventListener("click", hideMenu);

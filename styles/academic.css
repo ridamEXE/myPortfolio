@@ -10,7 +10,7 @@ main {
 }
 
 h3 {
-    margin: 0;
+    margin: 5rem 0 0 0;
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
 }
@@ -41,9 +41,31 @@ h5 {
     color: rgba(0, 0, 0, 0.8);
 }
 
-.card {
-    margin: 1rem 0;
+.heading-hr {
+    width: 70%;
+    height: 0.2rem;
+    background-color: black;
+    border: none;
+}
+
+.sub-heading-hr {
+    width: 30%;
+    height: 1px;
+    background-color: lightgray;
+    border: none;
+}
+
+#academic-details {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.academic-card {
     padding: 1rem 2rem;
+    width: auto;
     height: 20rem;
     border-radius: 0.25rem;
     display: flex;
@@ -54,11 +76,11 @@ h5 {
     transition: 0.4s;
 }
 
-.card:hover {
+.academic-card:hover {
     box-shadow: 0px 0px 10px 1px rgb(224, 224, 224);
 }
 
-#box-1-design {
+.box-1-design {
     top: 45%;
     left: -15%;
     width: 50rem;
@@ -70,11 +92,11 @@ h5 {
     transition: 0.5s;
 }
 
-.card:hover #box-1-design{
+.academic-card:hover .box-1-design {
     top: 50%;
 }
 
-#box-2-design{
+.box-2-design {
     top: 0%;
     left: 0%;
     width: 100rem;
@@ -86,11 +108,11 @@ h5 {
     transition: 0.8s;
 }
 
-.card:hover #box-2-design{
+.academic-card:hover .box-2-design {
     left: 5%;
 }
 
-.card img {
+.academic-card img {
     width: 150px;
     height: 150px;
 }
@@ -120,7 +142,99 @@ h5 {
     font-weight: 500;
 }
 
-#skill-details{
+#certificate-details {
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.certificate-card {
+    padding: 1rem 3rem;
+    width: 100%;
+    background-color: rgba(232, 232, 232, 0.367);
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.certificate-card:hover {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 10px 1px rgb(224, 224, 224);
+}
+
+.certificate-card-design-1 {
+    left: 5%;
+    width: 20rem;
+    height: 20rem;
+    rotate: 65deg;
+    position: absolute;
+    background: linear-gradient(120deg, rgb(208, 208, 208), rgb(185, 184, 184), rgb(155, 155, 155));
+    z-index: -1;
+    transition: 0.6s;
+}
+
+.certificate-card:hover .certificate-card-design-1 {
+    rotate: 60deg;
+}
+
+.certificate-card-design-2 {
+    left: 10%;
+    top: 40%;
+    width: 30rem;
+    height: 20rem;
+    rotate: 15deg;
+    position: absolute;
+    background: linear-gradient(120deg, rgb(208, 208, 208), rgb(185, 184, 184), rgb(155, 155, 155));
+    z-index: -1;
+    transition: 0.6s;
+}
+
+.certificate-card:hover .certificate-card-design-2 {
+    rotate: 18deg;
+    left: 8.5%;
+}
+
+.certificate-card-design-3 {
+    left: 10%;
+    width: 40rem;
+    height: 20rem;
+    rotate: -10deg;
+    position: absolute;
+    background: linear-gradient(120deg, rgb(208, 208, 208), rgb(185, 184, 184), rgb(155, 155, 155));
+    z-index: -1;
+    transition: 0.6s;
+}
+
+.certificate-card:hover .certificate-card-design-3 {
+    left: 9%;
+    rotate: -12deg;
+}
+
+.certificate-card-design-4 {
+    left: 10%;
+    bottom: 30%;
+    width: 22rem;
+    height: 20rem;
+    rotate: 5deg;
+    position: absolute;
+    background: linear-gradient(120deg, rgb(208, 208, 208), rgb(185, 184, 184), rgb(155, 155, 155));
+    z-index: -1;
+    transition: 0.6s;
+}
+
+.certificate-card:hover .certificate-card-design-4 {
+    left: 9%;
+    bottom: 35%;
+}
+
+.certificate-card h4 {
+    font-size: 1.4rem;
+}
+
+#skill-details {
+    margin-top: 3rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -128,7 +242,7 @@ h5 {
     text-align: left;
 }
 
-.skill-card{
+.skill-card {
     padding: 1rem;
     width: 30rem;
     background-color: rgba(232, 232, 232, 0.518);
@@ -138,12 +252,12 @@ h5 {
     transition: 0.4s;
 }
 
-.skill-card:hover{
+.skill-card:hover {
     box-shadow: 0px 0px 10px 1px rgb(224, 224, 224);
     background-color: rgba(255, 255, 255, 0);
 }
 
-#skill-card-design-1{
+.skill-card-design-1 {
     right: -10%;
     top: -10%;
     width: 12rem;
@@ -155,11 +269,11 @@ h5 {
     transition: 0.5s;
 }
 
-.skill-card:hover #skill-card-design-1{
+.skill-card:hover .skill-card-design-1 {
     border-radius: 67% 33% 61% 39% / 47% 30% 70% 53%;
 }
 
-#skill-card-design-2{
+.skill-card-design-2 {
     left: -2%;
     bottom: -30%;
     width: 12rem;
@@ -171,18 +285,18 @@ h5 {
     transition: 0.9s;
 }
 
-.skill-card:hover #skill-card-design-2{
+.skill-card:hover .skill-card-design-2 {
     border-radius: 67% 33% 68% 32% / 30% 52% 48% 70%;
 }
 
 
-.skill-card h4{
+.skill-card h4 {
     margin: 0;
 }
 
-.skill-card ul{
-    /* padding: 0; */
+.skill-card ul {
     list-style: none;
+    color: rgb(30, 30, 30);
 }
 
 footer p {
@@ -192,27 +306,240 @@ footer p {
 }
 
 @media(max-width: 1080px) {
-    #academic-details {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
+    main {
+        width: 95%;
     }
 
-    .card img {
-        width: 300px;
-        height: 300px;
+    h3 {
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
     }
 
-    .card-heading h4 {
+    .material-symbols-outlined {
+        font-size: 3.4rem;
+    }
+
+    h6 {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    h4 {
+        margin: 0;
         font-size: 2.5rem;
     }
 
-    .card-heading h5 {
-        font-size: 1.5rem;
+    h5 {
+        margin: 0.5rem 0 0 0;
+        font-size: 1.3rem;
+    }
+
+    .heading-hr {
+        height: 0.1rem;
+    }
+
+    .sub-heading-hr {
+        height: 0.07rem;
+        background-color: rgb(120, 120, 120);
+    }
+
+    #academic-details {
+        flex-flow: row wrap;
+    }
+
+    .academic-card {
+        border-radius: 1rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .academic-card img {
+        margin: 0 auto;
+        width: auto;
+        height: 12rem;
+    }
+
+    .card-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-details {
+        font-size: 1.1rem;
     }
 
     .parent-list {
-        width: 60%;
-        font-size: 2rem;
+        padding: 0 0 0 1rem;
+    }
+
+    #certificate-details {
+        gap: 2rem;
+    }
+
+    #certificate-details h4 {
+        font-size: 2.5rem;
+    }
+
+    #certificate-details h6 {
+        font-size: 0.9rem;
+    }
+
+    .certificate-card {
+        padding: 1rem 0rem 1rem 2rem;
+    }
+
+    .certificate-card-design-1 {
+        left: 25%;
+        top: 5%;
+        background: linear-gradient(-40deg, rgb(219, 218, 218), rgb(183, 183, 183), rgb(156, 155, 155));
+    }
+
+    .certificate-card-design-2 {
+        left: 20%;
+        top: 30%;
+        background: linear-gradient(-40deg, rgb(219, 218, 218), rgb(183, 183, 183), rgb(156, 155, 155));
+    }
+
+    .certificate-card-design-3 {
+        left: 15%;
+        background: linear-gradient(-40deg, rgb(219, 218, 218), rgb(183, 183, 183), rgb(156, 155, 155));
+    }
+
+    .certificate-card-design-4 {
+        left: 20%;
+        background: linear-gradient(-40deg, rgb(219, 218, 218), rgb(183, 183, 183), rgb(156, 155, 155));
+    }
+
+    #skill-details {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .skill-card {
+        padding-left: 2rem;
+        width: auto;
+        border-radius: 1rem;
+    }
+
+    .skill-card-design-1 {
+        top: -20%;
+        right: 5%;
+        width: 18rem;
+        height: 18rem;
+        background: linear-gradient(-40deg, rgb(219, 218, 218), rgb(183, 183, 183), rgb(156, 155, 155));
+    }
+
+    .skill-card-design-2 {
+        left: 8%;
+        bottom: -10%;
+        width: 15rem;
+        height: 15rem;
+        background: linear-gradient(180deg, rgb(219, 218, 218), rgb(183, 183, 183), rgb(156, 155, 155));
+    }
+
+    .skill-card h4 {
+        font-size: 2.7rem;
+    }
+
+    .skill-card ul {
+        font-size: 1.6rem;
+    }
+}
+
+/* toggeling hover effect */
+@media (hover:none) {
+    .academic-card {
+        transition: none;
+    }
+
+    .academic-card:hover {
+        box-shadow: none;
+    }
+
+    .box-1-design {
+        transition: none;
+    }
+
+    .box-2-design {
+        transition: none;
+    }
+
+    .academic-card:hover .box-1-design {
+        top: 45%;
+    }
+
+    .academic-card:hover .box-2-design {
+        left: 0%;
+    }
+
+    .certificate-card {
+        transition: none;
+    }
+
+    .certificate-card:hover {
+        background-color: rgba(232, 232, 232, 0.367);
+        box-shadow: none;
+    }
+
+    .certificate-card-design-1 {
+        transition: none;
+    }
+
+    .certificate-card:hover .certificate-card-design-1 {
+        rotate: 65deg;
+    }
+
+    .certificate-card-design-2 {
+        transition: none;
+    }
+
+    .certificate-card:hover .certificate-card-design-2 {
+        rotate: 15deg;
+        left: 20%;
+        top: 30%;
+    }
+
+    .certificate-card-design-3 {
+        transition: none;
+    }
+
+    .certificate-card:hover .certificate-card-design-3 {
+        left: 15%;
+        rotate: -10deg;
+    }
+
+    .certificate-card-design-4 {
+        transition: none;
+    }
+
+    .certificate-card:hover .certificate-card-design-4 {
+        left: 20%;
+        bottom: 30%;
+    }
+
+    .skill-card {
+        transition: none;
+    }
+
+    .skill-card:hover {
+        box-shadow: none;
+        background-color: rgba(232, 232, 232, 0.518);
+
+    }
+
+    .skill-card-design-1 {
+        transition: none;
+    }
+
+    .skill-card:hover .skill-card-design-1 {
+        border-radius: 49% 51% 51% 49% / 36% 69% 31% 64%;
+    }
+
+    .skill-card-design-2 {
+        transition: none;
+    }
+
+    .skill-card:hover .skill-card-design-2 {
+        border-radius: 47% 53% 53% 47% / 65% 46% 54% 35%;
     }
 }
