@@ -1,129 +1,350 @@
-section {
-    background-image: url(./images/about_me_banner.png);
-    background-position: top;
+:root {
+  --primary-font: 'Geologica', sans-serif;
+  --secondary-font: 'Kanit', sans-serif;
+  --custom-black: rgb(32, 32, 32);
+  --custom-white: rgb(240, 240, 240);
 }
 
-main {
-    margin: auto;
-    padding: 0rem;
-    width: 80%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.my-card {
-    margin: 1rem auto;
+body {
+    min-height: 100vh;
+    background-color: rgb(240, 240, 240);
+    color: rgb(33, 33, 33);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+#side-window{
+    display: grid;
+    grid-template-rows: minmax(auto, 25vh) minmax(auto, auto) minmax(20vh, auto);
+    grid-template-columns: 20vw;
+}
+
+#name-icon{
+    overflow: hidden;
+    align-self: center;
+    text-align: right;
+}
+
+#name-icon h2{
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    animation: slideIn 0.8s ease-out;
+    animation-fill-mode: forwards;
+    display: inline-block;
+}
+
+@keyframes slideIn{
+    0% {
+        transform: translateX(20vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#navigation-list{
+    padding: 3rem 2rem;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    align-self: end;
+}
+
+#navigation-list ul{
+    list-style: none;
+    line-height: 1.8rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+#navigation-list a{
+    letter-spacing: 0.18rem;
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    transition: 0.15s;
+    transition-timing-function: ease
+}
+
+#navigation-list a:hover{
+    color: rgb(33, 33, 33);
+    margin-left: 0.5rem;
+}
+
+#page-heading{
+    grid-row: 1/4;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 90%;
+    writing-mode: sideways-lr;
+    width: 2rem;
 }
 
-.my-card p {
-    width: 60%;
+#page-heading::before,
+#page-heading::after{
+    content: "";
+    width: 0.5rem; 
+    flex-grow: 1;
+    background-color: rgb(33, 33, 33);
 }
 
-img {
-    width: 35%;
-    box-shadow: 2px 2px 10px rgba(98, 98, 98, 0.6);
-    border-radius: 0.2rem;
+#page-heading h1{
+    margin: 2rem 0;
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    cursor: default;
+}
+
+main{
+    margin: auto 3rem auto 1rem;
+    height: 95vh;
+    display: flex;
+    column-gap: 2.5rem;
+}
+
+#first-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 50ms;
+}
+
+.my-photo{
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 2rem;
+}
+
+.my-photo img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-h3 {
-    padding: 0rem;
-    font-size: 2rem;
-    text-align: left;
-    color: rgb(33, 33, 33);
+#personal-details{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    font-size: 0.8rem;
+    font-family: var(--secondary-font);
+    font-weight: 300;
 }
 
-main hr {
-    margin: 0;
-    width: 9rem;
+#personal-details span:nth-child(odd) {
+    font-weight: 500;
 }
 
-main p {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1rem;
-    word-spacing: -0.1rem;
-    font-weight: 400;
+#second-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 250ms;
+}
+
+#second-section h3{
+    padding-bottom: 1rem;
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#intro{
+    overflow-y: auto;
+    scrollbar-width: none;
+    max-height: 75%;
+    mask-image: linear-gradient(180deg,
+        rgb(0, 0, 0) 90%,
+        transparent 100%
+    );
+}
+
+#intro p{
+    padding: 0.3rem 0;
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    font-weight: 300;
     text-align: justify;
-    color: rgb(56, 56, 56);
 }
 
-footer {
-    margin-top: 3rem;
+#third-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 450ms;
 }
 
-footer p {
-    color: grey;
-    font-weight: 200;
-    margin-top: 3rem;
+#bottom-right-subsection{
+    display: flex;
+    justify-content: space-between;
 }
 
-button {
-    margin: 0rem;
-    padding: 0.6rem 1rem;
-    border: none;
-    color: rgb(240, 240, 240);
-    background-color: black;
+#button-cv{
+    padding: 1rem 2.2rem;
+    width: fit-content;
+    background-color: var(--custom-black);
+    border-style: none;
     cursor: pointer;
-    letter-spacing: 0.1rem;
+    /* margin: 1rem auto 3rem auto; */
 }
 
-button:hover {
-    background-color: rgb(30, 30, 30);
+#button-cv a{
+    font-family: var(--secondary-font);
+    color: var(--custom-white);
+    text-decoration: none;
+    transition: 0.2s ease-in;
 }
 
-@media(max-width: 1080px) {
-    main {
-        margin-top: 2rem;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-    }
+#next, #previous{
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+}
 
-    .my-card {
-        margin: 0 auto;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+.arrow-left, .arrow-right{
+    padding: 0.6rem;
+    border: 0.15rem var(--custom-black);
+    border-style: solid;
+    transition: 0.2s;
+}
 
-    .my-card:nth-last-child(1) {
-        flex-direction: column;
-    }
+.arrow-left:hover, .arrow-right:hover{
+    background-color: black;
+    color: white;
+}
 
-    .my-card p {
-        width: 90%;
-    }
+footer{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    /* height: 3rem; */
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+}
 
-    img {
-        width: 70%;
-    }
+footer p{
+    font-family: var(--primary-font);
+    font-size: 0.7rem;
+    font-weight: 200;
+    color: rgb(188, 188, 188);
+}
 
-    h3 {
-        text-align: center;
-        font-size: 3.5rem;
-    }
+.material-symbols-outlined {
+    vertical-align: middle;
+    /* font-size: 1.2rem; */
+}
 
-    main hr {
-        visibility: hidden;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-
-    main p {
-        margin: 3rem 0;
-        font-size: 1rem;
-    }
-
-    footer {
-        margin: 5rem auto 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-    }
-
-    button {
-        padding: 2rem 3rem;
-        font-size: 2rem;
+    to {
+        opacity: 1;
     }
 }
+
+/*
+
+main{
+    height: 100vh;
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#first-section{
+    width: 75%;
+    height: inherit;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#my-photo{
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    width: 40%;
+    height: 45vh;
+}
+
+
+
+#personal-details{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 45vh;
+    font-family: var(--secondary-font);
+    font-size: 0.7rem;
+    font-weight: 300;
+    word-spacing: -0.05rem;
+    text-align: justify;
+}
+
+#intro{
+    margin: 2rem 0;
+    overflow: scroll;
+}
+
+#intro p{
+    margin: 0.5rem 0;
+    font-family: 'kanit', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    word-spacing: -0.05rem;
+    text-align: justify;
+}
+
+#second-section{
+    padding: 4rem 1rem;
+    width: 24%;
+    height: inherit;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#next-previous a{
+    text-decoration: none;
+}
+
+#previous,
+#next{
+    margin: 0.5rem;
+    padding: 1rem;
+    display: inline;
+    border: 2px solid rgb(32, 32, 32);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+footer p{
+    font-family: var(--primary-font);
+    font-size: 0.7rem;
+    font-weight: 200;
+    color: rgb(170, 170, 170);
+} */

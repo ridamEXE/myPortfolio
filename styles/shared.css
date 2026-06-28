@@ -1,25 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0rem;
-    padding: 0rem;
-    text-align: center;
     font-family: 'Geologica', sans-serif;
     background-color: rgb(245, 245, 245);
 }
 
 section {
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 40vh;
     color: white;
 }
 
-header h1 {
+header h2 {
     margin: 0rem;
     padding-top: 1rem;
     font-size: 2rem;
     letter-spacing: 0.1rem;
+    text-align: center;
 }
 
 nav ul {
+    display: flex;
+    justify-content:center;
     padding: 0rem 1rem;
     list-style: none;
 }
@@ -38,10 +43,11 @@ nav ul {
     color: rgb(90, 90, 90);
 }
 
-section h2 {
+section h1 {
     height: 15rem;
     font-size: 5rem;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 #overlay {
@@ -52,100 +58,19 @@ section h2 {
     display: none;
 }
 
-footer p {
+#copyright-paragraph {
+    margin: 1rem auto;
     color: grey;
+    text-align: center;
     font-size: 0.7rem;
     font-weight: 200;
-    margin-top: 3rem;
 }
 
-@media(max-width: 1080px) {
-    section {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    header h1 {
-        display: none;
-    }
-
-    nav {
-        display: none;
-    }
-
-    section h2 {
-        height: auto;
-        margin: 5rem 0;
-        font-size: 7rem;
-    }
-
-    section hr {
-        width: 70%;
-    }
-
-    #shrink {
-        margin: 0 auto;
-        width: 15%;
-        background-color: rgb(255, 255, 255);
-        color: rgb(21, 21, 21);
-        border-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
-        font-size: 3.5rem;
-        transform: scale(1.1);
-    }
-
-    #overlay {
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        height: 100%;
-        background-image: none;
-        background-color: rgba(0, 0, 0, 0.6);
-        position: fixed;
-        z-index: 1;
-        visibility: hidden;
-    }
-
-    #overlay article {
-        margin: 0 auto;
-        padding: 1rem 3rem;
-        width: 65%;
-        border-radius: 1rem;
-        background-color: white;
-        z-index: 2;
-    }
-
-    #overlay ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    #overlay ul li {
-        margin: 2rem 0;
-    }
-
-    #overlay ul li a {
-        font-size: 2rem;
-        text-decoration: none;
-        color: rgb(20, 20, 20);
-    }
-
-    #expand {
-        margin: 1rem auto;
-        padding: 1rem;
-        border-radius: 3rem;
-        display: inline-block;
-        font-size: 3rem;
-        background-color: rgba(255, 255, 255, 0.25);
-        visibility: visible;
-    }
-
-    footer p {
-        font-size: 1.5rem;
-    }
-
-}
+/* #copyright-paragraph::before {
+    content: '';
+    margin: 1rem auto;
+    width: 80%;
+    height: 0.1rem;
+    display: block;
+    background-color: rgb(145, 179, 180);
+} */
