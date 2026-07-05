@@ -7,151 +7,150 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="scripts/shared.js" defer></script>
-    <link rel="stylesheet" href="styles/shared.css">
+        href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700&family=Kanit:wght@100;200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+    <!-- <script src="scripts/shared.js" defer></script> -->
+    <!-- <link rel="stylesheet" href="styles/shared.css"> -->
     <link rel="stylesheet" href="styles/project.css">
 </head>
 
 <body>
-    <section>
-        <header>
-            <h1>RIDAM KRISHNA</h1>
-        </header>
+    <header>
+        <section id="name-icon">
+            <h6>RIDAM KRISHNA</h6>
+            <h1>PROJECTS</h1>
+        </section>
+    </header>
 
-        <nav>
-            <ul>
-                <li class="nav-list"><a class="nav-list-link" href="index.html">HOME</a></li>
-                <li class="nav-list"><a class="nav-list-link" href="aboutme.html">ABOUT ME</a></li>
-                <li class="nav-list"><a class="nav-list-link" href="academic.html">ACADEMIC</a></li>
-                <li class="nav-list"><a class="nav-list-link" href="project.html">PROJECTS</a></li>
-                <li class="nav-list"><a class="nav-list-link" href="photography.html">PHOTOGRAPHY</a></li>
-                <li class="nav-list"><a class="nav-list-link" href="personalTimeline.html">PERSONAL TIMELINE</a></li>
-            </ul>
-        </nav>
-
-        <h2>PROJECT WORK</h2>
-        <span class="material-symbols-outlined" id="expand">
-            expand_more
-        </span>
-    </section>
-
-    <section id="overlay">
-        <span class="material-symbols-outlined" id="shrink">
-            expand_less
-        </span>
-        <article>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <hr>
-                <li><a href="aboutme.html">ABOUT ME</a></li>
-                <hr>
-                <li><a href="academic.html">ACADEMIC</a></li>
-                <hr>
-                <li><a href="project.html">PROJECTS</a></li>
-                <hr>
-                <li><a href="photography.html">PHOTOGRAPHY</a></li>
-                <hr>
-                <li><a href="personalTimeline.html">PERSONAL TIMELINE</a></li>
-            </ul>
-        </article>
-    </section>
+    <nav id="navigation-list">
+        <ul>
+            <div class="nav-line"></div>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT</a></li>
+            <li><a href="project.html">PROJECTS</a></li>
+            <li><a href="photography.html">PHOTOGRAPHY</a></li>
+            <li><a href="personalTimeline.html">PERSONAL TIMELINE</a></li>
+            <div class="nav-line"></div>
+        </ul>
+    </nav>
 
     <main>
-        <div class="project">
-            <div class="project-headings">
-                <img src="images/binarycode.png" alt="">
-                <div class="project-details">
+        <section id="cards">
+            <div class="card">
+                <!-- <figure>
+                    <img src="images/binarycode.png" alt="card background">
+                </figure> -->
+                <div class="card-heading">
+                    <h3>Banking System</h3>
+                    <h4>Java, Spring Boot, Angular</h4>
+                </div>
+                <p>
+                    Developed a full-stack web application using Spring Boot for the backend REST API and Angular for the 
+                    dynamic frontend. The application implements core banking functionalities, including role-based 
+                    access for distinct manager, employee, and customer portals. Engineered key features such as customer
+                    account creation, secure fund transfers, transaction histories, and user profile management, while
+                    ensuring data integrity through robust backend validations and a soft-delete mechanism.
+                </p>
+                <a href="https://github.com/ridamEXE/banking-system.git" target="_blank">Explore &#x2192</a>
+            </div>
+            <div class="card">
+                <!-- <figure>
+                    <img src="images/binarycode.png" alt="card background">
+                </figure> -->
+                <div class="card-heading">
+                    <h3>simulation and demonstration of proposed model of Cloud-IoT for healthcare</h3>
+                    <h4>Cloud, Embedded programming, Java, IoT, Simulation</h4>
+                </div>
+                <p>
+                    The project aims to overcome the limitations of traditional Cloud-IoT healthcare systems by improving 
+                    the network latency and consumption. The proposed architecture introduces a Fog layer of Cloud Computing
+                    in the interconnected IoT structure, which greatly improves the overall system. The simulation results 
+                    performed on the iFogSim simulator show a significant reduction in latency as well as network usage. The
+                    demonstration of the proposed architecture is practically possible. Designed using Arduino and ESP along
+                    with the number of sensors.
+                </p>
+                <a href="https://github.com/ridamEXE/simulation-and-demonstration-of-proposed-model-of-Cloud-IoT-for-healthcare.git" target="_blank">Explore &#x2192</a>
+            </div>
+            <div class="card">
+                <!-- <figure>
+                    <img src="images/binarycode.png" alt="card background">
+                </figure> -->
+                <div class="card-heading">
                     <h3>BLOOD BANK MANAGEMENT SYSTEM</h3>
                     <h4>C++ Development</h4>
                 </div>
-            </div>
-            <p>
-                A Blood Bank Management System is a software program developed in C++ programming language that
-                helps keep track of information about blood donors and donation blood bags as they are moved around
-                in a blood bank. The system is based on the concept of storing blood donor's information and allows
-                the user to perform certain tasks like adding donor's information, listing, and searching for
-                donor's information. The primary goal of the Blood Bank Management System is to manage Blood, Donor,
-                Blood Group, Blood Bank, and Stock data. The system uses classes and other features of C++ and does
-                not use any external files to store the data permanently. There is a simple login system.
-            </p>
-            <div class="project-link">
+                <p>
+                    A Blood Bank Management System is a software program developed in C++ programming language that
+                    helps keep track of information about blood donors and donation blood bags as they are moved around
+                    in a blood bank. The system is based on the concept of storing blood donor's information and allows
+                    the user to perform certain tasks like adding donor's information, listing, and searching for
+                    donor's information. The primary goal of the Blood Bank Management System is to manage Blood, Donor,
+                    Blood Group, Blood Bank, and Stock data. The system uses classes and other features of C++ and does
+                    not use any external files to store the data permanently. There is a simple login system.
+                </p>
                 <a href="https://github.com/ridamEXE/Blood_Bank_Management_System" target="_blank">Explore &#x2192</a>
             </div>
-        </div>
-
-        <hr width="60%">
-        <div class="project">
-            <div class="project-headings">
-                <img src="images/tic-tac-toe.png" alt="">
-                <div class="project-details">
+            <div class="card">
+                <!-- <figure>
+                    <img src="images/tic-tac-toe.png" alt="card background">
+                 </figure> -->
+                 <div class="card-heading">
                     <h3>TIC TAC TOE GAME</h3>
                     <h4>FrontEnd Development</h4>
                 </div>
-            </div>
-            <p>
-                This is a digital Tic Tac Toe game for two players, built with HTML, CSS, and JavaScript. HTML forms the
-                game board of nine squares. CSS styles the board and displays the 'X's and 'O's. JavaScript manages the
-                game logic, tracking turns, determining wins or draws, and resetting the game. Players click on a square
-                to make a move, aiming to align three of their marks vertically, horizontally, or diagonally. The game
-                can be played directly in a web browser.
-            </p>
-            <div class="project-link">
+                <p>
+                    This is a digital Tic Tac Toe game for two players, built with HTML, CSS, and JavaScript. HTML forms the
+                    game board of nine squares. CSS styles the board and displays the 'X's and 'O's. JavaScript manages the
+                    game logic, tracking turns, determining wins or draws, and resetting the game. Players click on a square
+                    to make a move, aiming to align three of their marks vertically, horizontally, or diagonally. The game
+                    can be played directly in a web browser.
+                </p>
                 <a href="https://github.com/ridamEXE/TicTacToe" target="_blank">Explore &#x2192</a>
             </div>
-        </div>
-
-        <hr width="60%">
-        <div class="project">
-            <div class="project-headings">
-                <img src="images/calculator.png" alt="">
-                <div class="project-details">
+            <div class="card">
+                <!-- <figure>
+                    <img src="images/calculator.png" alt="card background">
+                </figure> -->
+                <div class="card-heading">
                     <h3>BASIC CALCULATOR</h3>
                     <h4>Web App Development</h4>
                 </div>
-            </div>
-            <p>
-                The JavaScript Basic Calculator is a web-based application designed to perform basic arithmetic
-                operations. It is built using JavaScript, a powerful and flexible programming language widely used for
-                web development. The calculator is capable of performing addition, subtraction, multiplication, and
-                division. It features a user-friendly interface with buttons for digits (0-9) and operations (+, -, *,
-                /), and a display area to show the calculations and results. This project serves as a practical tool for
-                users who need to perform quick calculations, and also as a great learning resource for those interested
-                in understanding how a basic calculator can be implemented using JavaScript.
-            </p>
-            <div class="project-link">
+                <p>
+                    The JavaScript Basic Calculator is a web-based application designed to perform basic arithmetic
+                    operations. It is built using JavaScript, a powerful and flexible programming language widely used for
+                    web development. The calculator is capable of performing addition, subtraction, multiplication, and
+                    division. It features a user-friendly interface with buttons for digits (0-9) and operations (+, -, *,
+                    /), and a display area to show the calculations and results. This project serves as a practical tool for
+                    users who need to perform quick calculations, and also as a great learning resource for those interested
+                    in understanding how a basic calculator can be implemented using JavaScript.
+                </p>
                 <a href="https://github.com/ridamEXE/totting-up" target="_blank">Explore &#x2192</a>
             </div>
-        </div>
-
-        <hr width="60%">
-        <div class="project">
-            <div class="project-headings">
-                <img src="images/coding.png" alt="">
-                <div class="project-details">
+            <div class="card">
+                <!-- <figure>
+                    <img src="images/coding.png" alt="card background">
+                </figure> -->
+                <div class="card-heading">
                     <h3>MY SCHOOL</h3>
                     <h4>FrontEnd Development</h4>
                 </div>
-            </div>
-            <p>
-                A pure HTML frontend development project involves creating a website using only HTML without the use
-                of any additional libraries or frameworks. Cloning a website involves creating an exact replica of
-                an existing website. This can be done for a variety of tools. Overall, a pure HTML frontend
-                development project involves using these core web technologies to create a functional and visually
-                appealing website that accurately replicates the original website that was cloned.
-            </p>
-            <div class="project-link">
+                <p>
+                    A pure HTML frontend development project involves creating a website using only HTML without the use
+                    of any additional libraries or frameworks. Cloning a website involves creating an exact replica of
+                    an existing website. This can be done for a variety of tools. Overall, a pure HTML frontend
+                    development project involves using these core web technologies to create a functional and visually
+                    appealing website that accurately replicates the original website that was cloned.
+                </p>
                 <a href="https://github.com/ridamEXE/mySchool" target="_blank">Explore &#x2192</a>
             </div>
-        </div>
+        </section>
+        
     </main>
 
     <footer>
-        <p>© Ridam Krishna 2025</p>
+        <p id="copyright-paragraph">© Ridam Krishna 2025</p>
     </footer>
 </body>
 

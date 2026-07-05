@@ -1,9 +1,29 @@
-section {
-    background-image: url(./images/academic_banner.jpg);
-    background-position: center;
+:root {
+  --primary-font: 'Geologica', sans-serif;
+  --secondary-font: 'Kanit', sans-serif;
+  --custom-black: rgb(32, 32, 32);
+  --custom-white: rgb(240, 240, 240);
 }
 
-main {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(180deg, rgb(240, 240, 240), rgb(187, 187, 187));
+}
+
+/* body {
+    min-height: 100vh;
+    background-color: rgb(240, 240, 240);
+    color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: space-around;
+} */
+
+/* main {
     margin: auto;
     padding: 0rem;
     width: 80%;
@@ -449,7 +469,6 @@ footer p {
     }
 }
 
-/* toggeling hover effect */
 @media (hover:none) {
     .academic-card {
         transition: none;
@@ -545,4 +564,4 @@ footer p {
     .skill-card:hover .skill-card-design-2 {
         border-radius: 47% 53% 53% 47% / 65% 46% 54% 35%;
     }
-}
+} */
