@@ -7,6 +7,7 @@
   --color-begie-light: rgb(239, 233, 227);
   --color-begie-medium: rgb(217, 207, 199);
   --color-begie-dark: rgb(201, 181, 156);
+  --color-begie-contrast: rgb(220, 207, 192);
 }
 
 *{
@@ -87,41 +88,28 @@ nav a:hover::after{
 }
 
 main{
-    margin-top: 3rem;
+    margin: 3rem 1rem;
+    display: flex;
 }
 
 #cards{
-    padding: 2rem;
     /* background-color: pink; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
     justify-items: center;
-    /* width: 70%; */
+    width: 70%;
 }
 
 .card{
-    width: 30rem;
-    max-height: 35rem;
+    min-height: 20rem;
     padding: 1rem 2rem;
     background: linear-gradient(to bottom, var(--color-begie-lighter) 40%, var(--color-begie-light) 100%);
     font-family: var(--secondary-font);
     align-content: end;
     display: flex;
     flex-direction: column;
-}
-
-.card figure{
-    width: 100%;
-    max-height: 40%;
-    overflow: hidden;
-}
-
-.card figure img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1.2);
 }
 
 .card-heading h3{
@@ -132,40 +120,112 @@ main{
 
 .card-heading h4{
     font-weight: 200;
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .card p{
-    margin: auto;
+    margin-top: auto;
     font-weight: 300;
     font-size: 0.8rem;
     text-align: justify;
     height: 40%;
     overflow: scroll;
-    text-overflow: ellipsis; 
 }
 
 .card a {
-    margin-left: auto;
+    margin: 1rem 0 0 auto;
     padding: 0.5rem 1.5rem;
     width: fit-content;
-    text-shadow: none;
-    border-radius: 0.25rem;
-    border: 1px solid var(--color-begie-medium);
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 400;
     color: var(--custom-black);
     text-decoration: none;
     transition: 0.2s;
+    /* background-color: var(--color-begie-dark); */
+    border: 1px solid var(--color-begie-dark);
+
 }
 
 .card a:hover {
     background-color: var(--color-begie-dark);
-    color: var(--custom-white);
+}
+
+article {
+    width: 30%;
+    height: fit-content;
+    /* background-color: var(--color-begie-dark); */
+    justify-items: center;
+    font-family: var(--secondary-font);
+    position: sticky;
+    top: var(--navbar-height);
+}
+
+#sticky-card{
+    min-height: 25rem;
+    margin: 0rem 3rem;
+    padding: 2rem;
+    background-color: var(--color-begie-contrast);
+    display: flex;
+    flex-direction: column;
+}
+
+#status-badge{
+    margin-bottom: 1rem;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    gap: 0.3rem;
+    animation: fadeInOutContinous 1s ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 50ms;
+}
+
+#sticky-card h3{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#sticky-card h4{
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+#sticky-card p{
+    /* height: 30vh; */
+    /* overflow: scroll; */
+    font-weight: 300;
+    font-size: 0.7rem;
+    text-align: justify;
+    overflow: scroll;
+    align-self: end;
+    /* text-overflow: ellipsis;  */
+}
+
+#sticky-card a {
+    margin: auto 0 0 auto;
+    padding: 0.5rem 1.5rem;
+    width: fit-content;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--custom-black);
+    text-decoration: none;
+    transition: 0.2s;
+    border: 1px solid var(--color-begie-dark);
+}
+
+#sticky-card a:hover {
+    background-color: var(--color-begie-dark);
 }
 
 footer{
-    /* position: absolute;
-    top: 100%;
-    width: 100%; */
     /* height: 3rem; */
     text-align: center;
     background-color: rgb(44, 44, 44);
@@ -178,158 +238,17 @@ footer p{
     color: rgb(188, 188, 188);
 }
 
-/* section {
-    background-image: url(./images/project.jpg);
-    background-position: center;
+.material-symbols-outlined{
+    align-content: center;
+    font-size: 1.2rem;
 }
 
-main {
-    margin: 1rem auto;
-    padding: 0rem;
-    width: 90%;
-    text-align: left;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 5rem;
-    margin-bottom: 7rem;
-    text-align: center;
-}
-
-h3 {
-    font-size: 2rem;
-    margin: 0.3rem;
-}
-
-h4 {
-    margin: 0.3rem;
-}
-
-h4 {
-    font-weight: 300;
-    text-transform: none;
-}
-
-.project {
-    margin: 0rem auto;
-    padding: 1.5rem 5rem;
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-image: url(./images/boxbackground.jpg);
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 1px 2px 8px rgb(69, 69, 69);
-    border-radius: 10px;
-    transition: transform 0.4s ease-out;
-}
-
-.project:hover {
-    transform: scale(1.02);
-}
-
-.project-headings {
-    display: flex;
-    align-items: center;
-}
-
-.project-details {
-    padding: 1.5rem;
-}
-
-.project p {
-    width: 70%;
-    font-weight: 200;
-    text-align: justify;
-    text-shadow: 2px 2px 10px rgb(0, 0, 0);
-}
-
-.project-link {
-    text-align: right;
-}
-
-.project-link a {
-    padding: 10px 20px;
-    text-shadow: none;
-    background-color: white;
-    border-radius: 0.25rem;
-    transition: 0.2s;
-}
-
-.project-link a:hover {
-    background-color: black;
-    color: white;
-}
-
-.project a {
-    text-align: right;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    text-decoration: none;
-}
-
-main hr {
-    margin: 2rem auto;
-}
-
-img {
-    width: 160px;
-}
-
-@media(max-width: 1080px) {
-    main {
-        margin: 3rem auto 0rem auto;
+@keyframes fadeInOutContinous {
+    0%{
+        opacity: 20%;
     }
-
-    h3 {
-        font-size: 2.5rem;
-        font-weight: 400;
+    100%{
+        opacity: 100%;
     }
-
-    h4 {
-        font-size: 1.5rem;
-    }
-
-    .project {
-        width: auto;
-        padding: 2rem;
-    }
-
-    .project p {
-        display: none;
-        width: 80%;
-        font-size: 1.5rem;
-    }
-
-    .project-link a {
-        padding: 1rem 2.5rem;
-        font-size: 2rem;
-    }
-
-    #show-description {
-        font-size: 0.8rem;
-        align-items: center;
-    }
+    
 }
-
-@media(hover:none) {
-    .project {
-        transition: none;
-    }
-
-    .project:hover {
-        transform: none;
-    }
-
-    .project-link a {
-        transition: none;
-    }
-
-    .project-link a:hover {
-        background-color: white;
-        color: black;
-    }
-} */
