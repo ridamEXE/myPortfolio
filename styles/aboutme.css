@@ -1,17 +1,17 @@
 :root {
-  --primary-font: 'Geologica', sans-serif;
-  --secondary-font: 'Kanit', sans-serif;
-  --font-color-black: rgb(32, 32, 32);
-  --font-color-white: rgb(240, 240, 240);
-  --font-color-off-black: rgb(100, 100, 100);
-  --color-begie-lighter: rgb(249, 248, 246);
-  --color-begie-light: rgb(239, 233, 227);
-  --color-begie-medium: rgb(217, 207, 199);
-  --color-begie-dark: rgb(201, 181, 156);
-  --color-begie-contrast: rgb(220, 207, 192);
+    --primary-font: 'Geologica', sans-serif;
+    --secondary-font: 'Kanit', sans-serif;
+    --font-color-black: rgb(32, 32, 32);
+    --font-color-white: rgb(240, 240, 240);
+    --font-color-off-black: rgb(100, 100, 100);
+    --color-begie-lighter: rgb(249, 248, 246);
+    --color-begie-light: rgb(239, 233, 227);
+    --color-begie-medium: rgb(217, 207, 199);
+    --color-begie-dark: rgb(201, 181, 156);
+    --color-begie-contrast: rgb(220, 207, 192);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,45 +25,32 @@ body {
     justify-content: space-around;
 }
 
-#side-window{
+#side-window {
     display: grid;
-    grid-template-rows: minmax(auto, 25vh) minmax(auto, auto) minmax(20vh, auto);
-    grid-template-columns: 20vw;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto) minmax(20vh, auto);
+    grid-template-columns: 18vw;
 }
 
-#name-icon{
-    overflow: hidden;
-    align-self: center;
-    text-align: right;
+header figure {
+    width: 50%;
+    height: 50%;
 }
 
-#name-icon h2{
-    font-family: var(--primary-font);
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 0.3rem;
-    animation: slideIn 0.8s ease-out;
-    animation-fill-mode: forwards;
-    display: inline-block;
+header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* transform: scale(1.25); */
 }
 
-@keyframes slideIn{
-    0% {
-        transform: translateX(20vw);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-
-#navigation-list{
-    padding: 3rem 2rem;
+#navigation-list {
+    padding: 2rem;
     grid-row: 3/4;
     grid-column: 1/2;
     align-self: end;
 }
 
-#navigation-list ul{
+#navigation-list ul {
     list-style: none;
     line-height: 1.8rem;
     font-family: var(--secondary-font);
@@ -71,7 +58,7 @@ body {
     font-size: 0.8rem;
 }
 
-#navigation-list a{
+#navigation-list a {
     letter-spacing: 0.18rem;
     text-decoration: none;
     color: rgb(100, 100, 100);
@@ -79,12 +66,12 @@ body {
     transition-timing-function: ease
 }
 
-#navigation-list a:hover{
+#navigation-list a:hover {
     color: rgb(33, 33, 33);
     margin-left: 0.5rem;
 }
 
-#page-heading{
+#page-heading {
     grid-row: 1/4;
     grid-column: 2/3;
     display: flex;
@@ -95,14 +82,16 @@ body {
 }
 
 #page-heading::before,
-#page-heading::after{
+#page-heading::after {
     content: "";
-    width: 0.5rem;
+    width: 0.8rem;
     flex-grow: 1;
+    /* border-radius: 1rem; */
     background-color: var(--color-begie-dark);
+    /* mask-image: linear-gradient(to right, transparent 0% 60%, rgb(0, 0, 0) 50%, transparent 40% 100%); */
 }
 
-#page-heading h1{
+#page-heading h1 {
     margin: 2rem 0;
     font-family: var(--secondary-font);
     font-size: 1.6rem;
@@ -111,14 +100,14 @@ body {
     cursor: default;
 }
 
-main{
+main {
     margin: auto 3rem auto 1rem;
     height: 95vh;
     display: flex;
     column-gap: 1rem;
 }
 
-#first-section{
+#first-section {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -128,22 +117,21 @@ main{
     animation-delay: 50ms;
 }
 
-.my-photo{
+.my-photo {
     width: fit-content;
     height: 60vh;
 }
 
-.my-photo img{
+.my-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#personal-details{
-    padding: 1rem 1rem;
-    background-color: var(--color-begie-light);
+#personal-details {
+    padding: 1rem 0;
     display: grid;
-    grid-template-columns: 0.3fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
     column-gap: 0.3rem;
     font-size: 0.7rem;
     font-family: var(--secondary-font);
@@ -152,14 +140,14 @@ main{
 
 #personal-details span:nth-child(odd) {
     font-weight: 500;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 
-#personal-details span:nth-child(even){
+#personal-details span:nth-child(even) {
     color: var(--font-color-off-black);
 }
 
-#second-section{
+#second-section {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -170,23 +158,23 @@ main{
     animation-delay: 250ms;
 }
 
-#second-section h3{
+#second-section h3 {
     padding-bottom: 1rem;
     font-family: var(--primary-font);
     font-size: 1.4rem;
     font-weight: 500;
 }
 
-#intro{
+#intro {
     padding: 1rem;
     overflow-y: auto;
     scrollbar-width: none;
+    height: fit-content;
     max-height: 75%;
-    border: 1px solid var(--color-begie-medium);
-    /* background-color: var(--color-begie-light); */
+    border: 2px solid var(--color-begie-light);
 }
 
-#intro p{
+#intro p {
     margin-bottom: 0.4rem;
     font-family: var(--secondary-font);
     font-size: 0.7rem;
@@ -194,11 +182,11 @@ main{
     text-align: justify;
 }
 
-#intro p:last-child{
+#intro p:last-child {
     margin-bottom: 0;
 }
 
-#third-section{
+#third-section {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -208,16 +196,15 @@ main{
     animation-delay: 450ms;
 }
 
-#third-section article{
-    padding: 2rem 1rem;
+#third-section article {
+    padding: 2rem 0;
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-begie-light);
 }
 
-#button-cv{
+#button-cv {
     margin-right: auto;
     padding: 0.5rem 1rem;
     border-style: none;
@@ -231,12 +218,12 @@ main{
     border: 2px solid var(--color-begie-dark);
 }
 
-#button-cv:hover{
+#button-cv:hover {
     background-color: var(--color-begie-medium);
 }
 
-.arrow-left, 
-.arrow-right{
+.arrow-left,
+.arrow-right {
     margin-left: 0.5rem;
     padding: 0.4rem;
     text-decoration: none;
@@ -247,12 +234,12 @@ main{
     transition: 0.2s;
 }
 
-.arrow-left:hover, 
-.arrow-right:hover{
+.arrow-left:hover,
+.arrow-right:hover {
     background-color: var(--color-begie-medium);
 }
 
-footer{
+footer {
     position: absolute;
     top: 100%;
     width: 100%;
@@ -260,7 +247,7 @@ footer{
     background-color: var(--color-begie-dark);
 }
 
-footer p{
+footer p {
     margin: 1rem auto;
     width: fit-content;
     font-family: var(--primary-font);
@@ -277,6 +264,7 @@ footer p{
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
